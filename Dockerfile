@@ -1,4 +1,4 @@
-FROM node:9-alpine
+FROM node:10
 MAINTAINER Doni Leong <doni.leong@gmail.com>
 
 RUN mkdir -p /.npm && \
