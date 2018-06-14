@@ -6,4 +6,8 @@ RUN mkdir -p /.npm && \
     chmod 777 /.npm && \
     chmod 777 /.config && \
     npm config set registry http://registry.npm.taobao.org && \
-    npm config set sass-binary-site http://npm.taobao.org/mirrors/node-sass
+    npm config set sass-binary-site http://npm.taobao.org/mirrors/node-sass && \
+    chmod 777 /root -R
+
+ENV HOME=/root
+
