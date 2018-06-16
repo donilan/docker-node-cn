@@ -8,7 +8,7 @@ RUN mkdir -p /.npm && \
     chmod 777 /.npm && \
     npm config set registry http://registry.npm.taobao.org && \
     npm config set sass-binary-site http://npm.taobao.org/mirrors/node-sass && \
-    yarn config set cache-folder /tmp/yarn-cache && \
+    yarn config set cache-folder /yarn-cache && \
     chmod 777 /root -R && \
     mkdir -p /app && \
     chmod 777 /app -R
