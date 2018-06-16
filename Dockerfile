@@ -8,11 +8,11 @@ RUN mkdir -p /.npm && \
     chmod 777 /.npm && \
     npm config set registry http://registry.npm.taobao.org && \
     npm config set sass-binary-site http://npm.taobao.org/mirrors/node-sass && \
-    yarn config set cache-folder /yarn-cache && \
-    chmod 777 /root -R && \
+    cp -r /root /home && \
+    chmod 777 /home -R && \
     mkdir -p /app && \
     chmod 777 /app -R
 
 WORKDIR /app
-ENV HOME=/root
+ENV HOME=/home
 
