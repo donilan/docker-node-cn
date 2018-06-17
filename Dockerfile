@@ -4,7 +4,7 @@ MAINTAINER Doni Leong <doni.leong@gmail.com>
 
 RUN mkdir -p /.npm && \
     mkdir -p /.config && \
-    mkdir -p /root/.cache/yarn && \
+    echo "--cache-folder /tmp/yarn-cache/" > ~/.yarnrc && \
     chmod 777 /.config && \
     chmod 777 /.npm && \
     npm config set registry http://registry.npm.taobao.org && \
