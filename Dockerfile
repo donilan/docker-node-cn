@@ -1,4 +1,4 @@
-FROM node:9
+FROM node:10
 MAINTAINER Doni Leong <doni.leong@gmail.com>
 
 RUN npm config set registry http://registry.npm.taobao.org && \
