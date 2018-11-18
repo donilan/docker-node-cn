@@ -1,7 +1,9 @@
 FROM node:11
 MAINTAINER Doni Leong <doni.leong@gmail.com>
 
-RUN npm config set registry http://registry.npm.taobao.org && \
+RUN \
+    yarn global add gitbook gitbook-cli && \
+    npm config set registry http://registry.npm.taobao.org && \
     npm config set sass-binary-site http://npm.taobao.org/mirrors/node-sass && \
     npm config set puppeteer_download_host=https://storage.googleapis.com.cnpmjs.org && \
     npm config set chromedriver_cdnurl http://cdn.npm.taobao.org/dist/chromedriver && \
