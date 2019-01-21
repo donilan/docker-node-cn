@@ -2,6 +2,7 @@ FROM node:11
 MAINTAINER Doni Leong <doni.leong@gmail.com>
 
 RUN \
+    curl https://install.meteor.com/ | sh && \
     yarn global add gitbook gitbook-cli && \
     npm config set registry http://registry.npm.taobao.org && \
     npm config set sass-binary-site http://npm.taobao.org/mirrors/node-sass && \
